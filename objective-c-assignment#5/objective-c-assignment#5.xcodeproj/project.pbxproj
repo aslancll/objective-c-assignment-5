@@ -10,6 +10,7 @@
 		6305D60D209299F200EC2534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305D60C209299F200EC2534 /* main.m */; };
 		6305D61520929B7C00EC2534 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305D61420929B7C00EC2534 /* Kitchen.m */; };
 		6305D61820929ED800EC2534 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305D61720929ED800EC2534 /* Pizza.m */; };
+		63262F6520DF159400E7FB20 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63262F6320DF159400E7FB20 /* Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		6305D61420929B7C00EC2534 /* Kitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 		6305D61620929ED800EC2534 /* Pizza.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		6305D61720929ED800EC2534 /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		63262F6320DF159400E7FB20 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		63262F6420DF159400E7FB20 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		6305D60B209299F200EC2534 /* objective-c-assignment#5 */ = {
 			isa = PBXGroup;
 			children = (
+				63262F6420DF159400E7FB20 /* Manager.h */,
+				63262F6320DF159400E7FB20 /* Manager.m */,
 				6305D60C209299F200EC2534 /* main.m */,
 				6305D61620929ED800EC2534 /* Pizza.h */,
 				6305D61720929ED800EC2534 /* Pizza.m */,
@@ -131,6 +136,7 @@
 				6305D61820929ED800EC2534 /* Pizza.m in Sources */,
 				6305D61520929B7C00EC2534 /* Kitchen.m in Sources */,
 				6305D60D209299F200EC2534 /* main.m in Sources */,
+				63262F6520DF159400E7FB20 /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

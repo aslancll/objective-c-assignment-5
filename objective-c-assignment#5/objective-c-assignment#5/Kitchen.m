@@ -1,6 +1,6 @@
 //
 //  Kitchen.m
-//  objective-c-assignment#5
+//  PizzaRestaurant
 //
 //  Created by Celal Aslan on 2018-04-26.
 //  Copyright © 2018 Celal Aslan. All rights reserved.
@@ -10,29 +10,32 @@
 
 @implementation Kitchen
 
-//- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
-//{
-//
-//
-//
-//}
-//+(Pizza *)largePepperoni {
-//
-//}
-//
-//+(Pizza *)meatLoversWithSize:(PizzaSize)size {
-//
-//}
+- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
+{
+    Pizza *newPizza = [[Pizza alloc] initWithPizzaSize:size toppings:toppings];
+  
+  // part 2
+  
+  if ( ![self.delegate kitchen:self shouldMakePizzaOfSize:size andToppings:toppings]) {
+    return nil;
+  };
 
-- (Pizza *)makePizzaWithSize:(NSString *)size toppings:(NSMutableArray *)toppings {
-    Pizza *pizza = [[Pizza alloc] init];
-    pizza.size = size;
-    pizza.toppings = toppings;
-    NSLog(@"Your pizza: Size: %@, Toppings: %@", pizza.size, pizza.toppings);
-    return pizza;
+  
+  PizzaSize newSize = size;
+  
+  
+  if  ([self.delegate kitchenShouldUpgradeOrder:self]) {
+    newSize = Large;
+  }
+
+  if ([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
+    [self.delegate kitchenDidMakePizza:newPizza];
+  }
+  
+  
+    return newPizza;
 }
 
 
+
 @end
-
-
